@@ -7,7 +7,9 @@ namespace petstore
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      PetStore petstore = new PetStore();
+      Cat snibbley = new Cat("Mr.", "Snibbley");
+      petstore.AddCatInventory(snibbley);
     }
   }
 }
